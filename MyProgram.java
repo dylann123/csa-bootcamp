@@ -36,21 +36,21 @@ class MyProgram {
 		int age = scanner.nextInt();
 
 		/*
-		 * the == operator checks if two values are equal
-		 * ex. 5 == 5 is true, 5 == 6 is false
-		 * the % operator (modulus) returns the remainder of a division
-		 * ex. 5 % 2 == 1, 8 % 2 == 0
-		 * 
-		 * a boolean variable can only be true or false
-		 * the isEven variable will be true if age is divisible by 2, false otherwise
+		the == operator checks if two values are equal
+		ex. 5 == 5 is true, 5 == 6 is false
+		the % operator (modulus) returns the remainder of a division
+		ex. 5 % 2 == 1, 8 % 2 == 0
+		
+		a boolean variable can only be true or false
+		the isEven variable will be true if age is divisible by 2, false otherwise
 		 */
 		boolean isEven = (age % 2 == 0);
 
 		/*
-		 * an if statement checks if a given condition returns true
-		 * ex. if (age > 10) { ... } checks if age is greater than 10
-		 * 
-		 * isEven is a boolean variable, so we can use it in an if statement
+		an if statement checks if a given condition returns true
+		ex. if (age > 10) { ... } checks if age is greater than 10
+		
+		isEven is a boolean variable, so we can use it in an if statement
 		 */
 		if (isEven) {
 			// combining strings and integers works!
