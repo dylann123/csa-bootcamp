@@ -53,9 +53,12 @@ class MyProgram {
 		isEven is a boolean variable, so we can use it in an if statement
 		 */
 		if (isEven) {
+			// if isEven is true, run this section of the code
+
 			// combining strings and integers works!
 			System.out.println("Your age, " + age + ", is even!");
 		} else {
+			// if isEven is false, run this section of the code
 			System.out.println("Your age, " + age + ", is odd!");
 		}
 
