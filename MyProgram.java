@@ -54,20 +54,27 @@ class MyProgram {
 		 */
 		if (isEven) {
 			// combining strings and integers works!
-			System.out.println("Your age, " + age + " is even!");
+			System.out.println("Your age, " + age + ", is even!");
 		} else {
-			System.out.println("Your age, " + age + " is odd!");
+			System.out.println("Your age, " + age + ", is odd!");
 		}
+
+		System.out.print("Give me a number: ");
+		int number = scanner.nextInt();
 
 		// dividing an int by an int will return an int
 		// the result will be truncated to the decimal point / rounded down to the nearest integer
-		int intAge = age / 7;
-		System.out.println(age + " int divided by 7 is " + intAge);
+		int intAge = age / number;
+		System.out.println(age + " int divided by " + number + " is " + intAge);
+
+		// type casting (converting) an int to a double
+		// we convert number into a double and store it in doubleNumber
+		double doubleNumber = (double) number;
 
 		// dividing a double by an int OR double will return a double (decimal number)
-		// doubles will alawys have a decimal point
-		double doubleAge = age / 7.0;
-		System.out.println(age + " double divided by 7 is " + doubleAge);
+		// doubles will alawys have a decimal point, even if it has to end with .0
+		double doubleAge = age / doubleNumber;
+		System.out.println(age + " double divided by " + number + " is " + doubleAge);
 
 		scanner.close();
 		// close the scanner to prevent memory leaks
